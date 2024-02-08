@@ -15,8 +15,6 @@ def test_create(mock_create_barcode):
     assert "path" in result["data"]
 
     assert result["data"]["type"]=="Tag Image"
-    
     assert result["data"]["count"]==1
-    
     assert result["data"]["type"]==f'{mock_value}.value'
 
